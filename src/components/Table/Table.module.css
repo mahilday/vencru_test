@@ -1,0 +1,12 @@
+.extraAvatar {
+  background: #f1f0f0;
+  border: 1.5px solid #ffffff;
+}
+.success {
+  background: #ecfdf3;
+  border-radius: 16px;
+  width: 55px;
+  height: 28px;
+  color:  #027A48;
+
+}
