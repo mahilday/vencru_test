@@ -26,15 +26,15 @@ export default function PaymentMethod() {
           Update your billing details and address.
         </p>
       </section>
-      <section className="flex h-40 py-5 border-b">
+      <section className="flex h-max md:h-40 py-5 border-b">
         <div className="flex h-full xs:flex-col sm:flex-col md:flex-row w-full">
-          <div className="w-4/12 xs:mb-5 sm:mb-5 md:mb-0">
+          <div className="w-full md:w-10/12 xl:w-4/12 xs:mb-5 sm:mb-5 md:mb-0">
             <h5 className="text-gray-900 font-medium text-sm">Contact email</h5>
             <p className="text-gray-500 mt-1 text-sm">
               Where should invoices be sent?
             </p>
           </div>
-          <div className="w-8/12 h-full flex flex-col justify-between">
+          <div className="w-full md:w-10/12 xl:w-8/12 h-full flex flex-col justify-between">
             <Label styles="flex">
               <Input
                 type="radio"
@@ -70,14 +70,14 @@ export default function PaymentMethod() {
         </div>
       </section>
       <section className="flex py-5">
-        <div className="w-full flex">
-        <div className="w-4/12">
+        <div className="w-full flex xs:flex-col sm:flex-col md:flex-row">
+        <div className="mb-5 w-full md:w-10/12 xl:w-4/12 md:mb-0">
           <h5 className="text-gray-900 font-medium text-sm">Card details</h5>
           <p className="text-gray-500 mt-1 text-sm">
             Select default payment method
           </p>
         </div>
-        <div className ="w-8/12">
+        <div className ="w-full md:w-10/12 xl:w-8/12">
           {cards?.map((item: any, index: number)=>(
             <BankCard key={index} item={item} />
           ))}

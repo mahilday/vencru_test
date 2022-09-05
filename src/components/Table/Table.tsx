@@ -89,7 +89,7 @@ export default function Table({ tableHeader }: Props) {
     return data.length;
   };
   return (
-    <div className="overflow-auto xl:relative z-0  tiny_scrollbar">
+    <div className="overflow-x-auto xl:relative z-0 tiny_scrollbar">
       <table className="w-full text-sm text-left text-gray-500 border border-gray-200 shadow-md bg-white rounded-lg ">
         <thead className="text-xs text-gray-700 bg-gray-50">
           <tr>

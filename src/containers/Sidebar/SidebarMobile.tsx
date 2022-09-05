@@ -7,8 +7,8 @@ import SidebarFooter from "../../components/SidebarFooter/SidebarFooter";
 export default function SidebarMobile() {
     const [show, setShow] = useState(false)
   return (
-    <div className="h-16  sticky top-0 flex flex-col justify-between">
-      <div className="flex justify-between relative z-10">
+    <div className="h-16 w-full sticky top-0 flex flex-col justify-between">
+      <div className="flex w-full justify-between relative z-10">
         <Logo />
         <button type="button" onClick={()=> setShow(true)}>
           <img src="/icons/Icon.svg" alt="hamburger" />
